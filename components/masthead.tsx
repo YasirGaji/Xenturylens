@@ -11,8 +11,8 @@ const Masthead: React.FC = () => {
         playsInline
         className="absolute w-full h-full object-cover"
       >
-        <source src="/assets/" type="video/mp4; codecs=hvc1" />
-        <source src="/assets/" type="video/webm; codecs=vp9" />
+        <source src="/assets/wc-bg.mp4" type="video/mp4; codecs=hvc1" />
+        <source src="/assets/wc-bg.mp4" type="video/webm; codecs=vp9" />
       </video>
       <div className="p-12 font-bold z-10 text-white drop-shadow-[0_5px_3px_rgba(0,0,0,0.4)] text-center flex-1 flex items-center justify-center flex-col">
         <h1 className="mb-6 text-4xl xl:text-5xl">webCourt</h1>
