@@ -14,7 +14,7 @@ const Home: NextPage = () => {
           name="description"
           content="Great Software is built by Great Teams"
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/logo.png" />
       </Head>
 
       <Masthead />
