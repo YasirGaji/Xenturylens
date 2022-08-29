@@ -16,7 +16,7 @@ const Masthead: React.FC = () => {
   return (
     <div
       ref={refContainer}
-      className="min-h-screen flex flex-col items-center justify-center"
+      className="min-h-screen flex flex-col items-center justify-center sticky top-0 -z-10"
       style={{
         transform: `translateY(-${progress * 20}vh)`,
       }}
