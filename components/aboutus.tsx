@@ -42,20 +42,6 @@ const AboutUs: React.FC = () => {
             link="https://razakdev.netlify.app"
             socialId="@razak2free"
           />
-
-          <Member
-            id="Yasir"
-            name="Yasir Gaji"
-            link="https://yasirgaji.com"
-            socialId="@yasirgaji"
-          />
-
-          <Member
-            id="Yasir"
-            name="Yasir Gaji"
-            link="https://yasirgaji.com"
-            socialId="@yasirgaji"
-          />
         </div>
       </div>
     </section>
