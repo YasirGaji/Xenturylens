@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useContext, useState, useCallback } from 'react';
 import Image from 'next/image';
 
 const Masthead: React.FC = () => {

@@ -17,7 +17,7 @@ const AboutUs: React.FC = () => {
         <div className="mt-10 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 lg:gap-20">
           <Member
             id="Yasir"
-            name="Yasir Gaji"
+            name="Yasir"
             link="https://yasirgaji.com"
             socialId="@yasirgaji"
           />
@@ -30,10 +30,10 @@ const AboutUs: React.FC = () => {
           />
 
           <Member
-            id="Yasir"
-            name="Yasir Gaji"
+            id="tunji"
+            name="Olatunji"
             link="https://yasirgaji.com"
-            socialId="@yasirgaji"
+            socialId="@sonoflatus"
           />
 
           <Member
