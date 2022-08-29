@@ -11,7 +11,7 @@ const Home: NextPage = () => {
         <title>XenturyLens</title>
         <meta
           name="description"
-          content="Great Software is built by Great Teams"
+          content="Great Software is built by Great Teams | We see Beyond the Product"
         />
         <link rel="icon" href="/logo.png" />
       </Head>
