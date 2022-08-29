@@ -6,9 +6,9 @@ const AboutUs: React.FC = () => {
     <section className={'flex flex-col bg-white py-20 text-3xl md:text-4xl'}>
       <div className="container mx-auto px-11">
         <p className="leading-light max-w-5xl mx-auto text-4xl tracking-tight">
-          <strong>We will help ship better softwares, faster.</strong> Our team
-          of professional engineers have created the best user experience in
-          some of the most popular softwares worldwide.
+          <strong>We will help ship better products, faster.</strong> Our team
+          of professional engineers and product managers, have created the best
+          user experience in some of the most popular softwares worldwide.
         </p>
       </div>
       <div className="container mx-auto px-11 text-center mt-28">
