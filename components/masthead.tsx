@@ -17,6 +17,9 @@ const Masthead: React.FC = () => {
     <div
       ref={refContainer}
       className="min-h-screen flex flex-col items-center justify-center"
+      style={{
+        transform: `translateY(-${progress * 20}vh)`,
+      }}
     >
       <video
         autoPlay

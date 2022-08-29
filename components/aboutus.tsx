@@ -23,24 +23,24 @@ const AboutUs: React.FC = () => {
           />
 
           <Member
+            id="tunji"
+            name="Yokao"
+            link="https://www.linkedin.com/in/olatunji-yusuf-0b659b193"
+            socialId="@sonoflatus"
+          />
+
+          <Member
             id="moji"
-            name="Mojisola"
+            name="NaNa"
             link="https://www.linkedin.com/in/mojisola-anthony-bb7412247/"
             socialId="@Esinana_moji"
           />
 
           <Member
-            id="tunji"
-            name="Olatunji"
-            link="https://yasirgaji.com"
-            socialId="@sonoflatus"
-          />
-
-          <Member
-            id="Yasir"
-            name="Yasir Gaji"
-            link="https://yasirgaji.com"
-            socialId="@yasirgaji"
+            id="zaki"
+            name="ZaKi"
+            link="https://razakdev.netlify.app"
+            socialId="@razak2free"
           />
 
           <Member
