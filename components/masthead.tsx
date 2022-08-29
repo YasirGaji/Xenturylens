@@ -1,9 +1,23 @@
 import React, { useRef, useContext, useState, useCallback } from 'react';
 import Image from 'next/image';
+import { ScrollContext } from '../utills/scroll-observer';
 
 const Masthead: React.FC = () => {
+  const refContainer = useRef<HTMLDivElement>(null);
+  const { scrollY } = useContext(ScrollContext);
+
+  let progress = 0;
+
+  const { current: elContainer } = refContainer;
+  if (elContainer) {
+    progress = Math.min(1, scrollY / elContainer.clientHeight);
+  }
+
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center">
+    <div
+      ref={refContainer}
+      className="min-h-screen flex flex-col items-center justify-center"
+    >
       <video
         autoPlay
         loop

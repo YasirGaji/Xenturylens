@@ -1,21 +1,27 @@
-import React, { useCallback, useEffect, useState } from 'react';
+import React, { ReactNode, useCallback, useEffect, useState } from 'react';
 
 interface ScrollValue {
   scrollY: number;
+}
+
+interface Props {
+  // any other props that come into the component, you don't have to explicitly define children.
+  children?: ReactNode;
 }
 
 export const ScrollContext = React.createContext<ScrollValue>({
   scrollY: 0,
 });
 
-const ScrollObserver: React.FC = ({ children }) => {
+const ScrollObserver: React.FC<Props> = ({ children, ...props }) => {
   const [scrollY, setScrollY] = useState(0);
   const handleScroll = useCallback(() => {
     setScrollY(window.scrollY);
   }, []);
 
   useEffect(() => {
-    document.addEventListener('scroll', handleScroll, []);
+    document.addEventListener('scroll', handleScroll, { passive: true });
+    return () => document.removeEventListener('scroll', handleScroll);
   }, [handleScroll]);
 
   return (
@@ -24,3 +30,5 @@ const ScrollObserver: React.FC = ({ children }) => {
     </ScrollContext.Provider>
   );
 };
+
+export default ScrollObserver;
