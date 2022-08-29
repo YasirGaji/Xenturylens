@@ -1,4 +1,5 @@
 import React from 'react';
+import Member from './member';
 
 const AboutUs: React.FC = () => {
   return (
@@ -14,12 +15,47 @@ const AboutUs: React.FC = () => {
         <h2>Our Team</h2>
         <div className="mt-2">the &ldquo;spec-ops&rdquo;</div>
         <div className="mt-10 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 lg:gap-20">
-          <div>member</div>
-          <div>member</div>
-          <div>member</div>
-          <div>member</div>
-          <div>member</div>
-          <div>member</div>
+          <Member
+            id="Yasir"
+            name="Yasir Gaji"
+            link="https://yasirgaji.com"
+            socialId="@yasirgaji"
+          />
+
+          <Member
+            id="moji"
+            name="Mojisola"
+            link="https://www.linkedin.com/in/mojisola-anthony-bb7412247/"
+            socialId="@Esinana_moji"
+          />
+
+          <Member
+            id="Yasir"
+            name="Yasir Gaji"
+            link="https://yasirgaji.com"
+            socialId="@yasirgaji"
+          />
+
+          <Member
+            id="Yasir"
+            name="Yasir Gaji"
+            link="https://yasirgaji.com"
+            socialId="@yasirgaji"
+          />
+
+          <Member
+            id="Yasir"
+            name="Yasir Gaji"
+            link="https://yasirgaji.com"
+            socialId="@yasirgaji"
+          />
+
+          <Member
+            id="Yasir"
+            name="Yasir Gaji"
+            link="https://yasirgaji.com"
+            socialId="@yasirgaji"
+          />
         </div>
       </div>
     </section>
