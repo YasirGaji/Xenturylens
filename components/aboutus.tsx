@@ -7,10 +7,16 @@ const AboutUs: React.FC = () => {
         <p className="leading-light max-w-5xl mx-auto text-4xl tracking-tight">
           <strong>We will help ship better softwares, faster.</strong> Our team
           of professional engineers have created the best user experience in
-          some of the most popular softwares in the world
+          some of the most popular softwares worldwide.
         </p>
       </div>
-      <div className="container mx-auto"></div>
+      <div className="container mx-auto px-11 text-center mt-28">
+        <h2>Our Team</h2>
+        <div>the &ldquo;spec-ops&rdquo;</div>
+        <div>
+          <div>member</div>
+        </div>
+      </div>
     </section>
   );
 };
