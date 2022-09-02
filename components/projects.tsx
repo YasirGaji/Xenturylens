@@ -1,8 +1,14 @@
 import React from 'react' 
-import { TileWrapper } from './tile'
+import { TileBackground, TileContent, TileWrapper } from './tile'
 
-const Projects = () => 
-  <TileWrapper numOfPages={5}></TileWrapper>
+const Projects = () => {
+  return( 
+    <TileWrapper numOfPages={5}>
+    <TileBackground numOfPages={0}></TileBackground>
+    <TileContent numOfPages={0}>Hello</TileContent>
+  </TileWrapper>
+  )
+}
 
 
 export default Projects;
