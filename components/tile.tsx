@@ -1,4 +1,5 @@
 import React, { useRef, useContext, ReactNode } from 'react';
+import { ScrollContext } from '../utills/scroll-observer';
 
 interface WrapperProps {
   numOfPages: number;
@@ -19,8 +20,29 @@ export const TileWrapper: React.FC<WrapperProps> = ({
   children,
   numOfPages
 }) => {
+  const {scrollY} = useContext(ScrollContext)
+  const refContainer = useRef<HTMLDivElement>(null)
+
+  let currentPage = 0
+
+  const { current: elContainer } = refContainer 
+  if ( elContainer ) {
+    const { clientHeight, offsetTop } = elContainer
+    const screenH = window.innerHeight
+    const halfH = screenH / 2
+    const percentY = 
+      Math.min(
+        clientHeight + halfH, 
+        Math.max(-screenH, scrollY - offsetTop) + halfH) / clientHeight
+    currentPage = percentY * numOfPages
+  }
+
   return (
-    <div className='relative bg-black text-white'>Tile</div>
+    <TileContext.Provider value={{numOfPages, currentPage}}>
+      <div ref={refContainer} className="relative bg-black text-white">
+      {children}
+      </div>
+    </TileContext.Provider>
   )
 }
 
