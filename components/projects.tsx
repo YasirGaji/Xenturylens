@@ -4,7 +4,7 @@ import { Tile, TileBackground, TileContent, TileWrapper } from './tile'
 
 const Projects = () => {
   return( 
-    <TileWrapper numOfPages={5}>
+    <TileWrapper numOfPages={3}>
     <TileBackground numOfPages={0}>
       <ProjectBackground />
     </TileBackground>
