@@ -17,7 +17,6 @@ const Home: NextPage = () => {
         />
         <link rel="icon" href="/logo.png" />
       </Head>
-
       <Masthead />
       <AboutUs />
       <Skills />

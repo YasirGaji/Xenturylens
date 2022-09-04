@@ -1,6 +1,7 @@
 import React from 'react' 
-import { ProjectBackground, ProjectContainer, ProjectLeft } from './project';
+import { ProjectBackground, ProjectContainer, ProjectLeft, ProjectRight } from './project';
 import { Tile, TileBackground, TileContent, TileWrapper } from './tile'
+import Image from 'next/image';
 
 const Projects = () => {
   return( 
@@ -14,10 +15,11 @@ const Projects = () => {
       <ProjectContainer progress={0}>
         <ProjectLeft progress={progress}>
           <div>We Built</div>
+          <div className='text-4xl md:text-5xl font-semibold tracking-tight'>Africarstruck&apos;s website</div>
         </ProjectLeft>
-          <span className='text-9xl'>Hello 
-            {progress}
-          </span>
+          <ProjectRight progress={progress}>
+            <Image src="/assets/projects/ACT.png" layout='responsive' width={940} height={1620} alt='ACT'/>
+          </ProjectRight>
       </ProjectContainer>)}></Tile>
         
       <Tile 
