@@ -5,6 +5,7 @@ import Link from 'next/link';
 interface Props {
   children?: ReactNode;
   progress: number 
+  href: string;
 }
 
 export const ProjectContainer: React.FC <Props> = ({children}: Props) => {
@@ -49,5 +50,13 @@ export const ProjectRight: React.FC <Props> = ({children, progress}: Props) => {
         {children}
       </div>
     </div>
+  )
+}
+
+
+
+export const ProjectLink: React.FC <Props> = ({ children, href }) => {
+  return (
+    <Link href={href}><a target="_blank" rel='noreferrer' className='underline underline-offset-8 decoration-1'>{children}</a></Link>
   )
 }
