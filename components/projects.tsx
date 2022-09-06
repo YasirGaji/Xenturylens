@@ -18,7 +18,7 @@ const Projects = () => {
           <div className='text-4xl md:text-5xl font-semibold tracking-tight'>Africarstruck&apos;s website</div>
         </ProjectLeft>
           <ProjectRight progress={progress}>
-            <Image src="/assets/projects/ACT.png" layout='responsive' width={840} height={1620} alt='ACT'/>
+            <Image src="/assets/projects/ACT.png" layout='responsive' width={717} height={816} alt='ACT'/>
           </ProjectRight>
       </ProjectContainer>)}></Tile>
         
