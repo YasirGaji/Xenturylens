@@ -48,7 +48,7 @@ const Projects = () => {
         page={2} renderContent={({progress}) => (
           <ProjectContainer progress={2} href={''}>
           <ProjectLeft progress={progress} href={''}>
-            <div>We Patnered with</div>
+            <div>We Partnered with</div>
             <div className='text-4xl md:text-5xl font-semibold tracking-tight'>
               <ProjectLink href='https://wearhighstreet.com/' progress={0}>
                 HighStreet
