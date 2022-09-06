@@ -15,33 +15,38 @@ const Projects = () => {
       <ProjectContainer progress={0}>
         <ProjectLeft progress={progress}>
           <div>We Built</div>
-          <div className='text-4xl md:text-5xl font-semibold tracking-tight'>Africarstruck&apos;s website</div>
+          <div className='text-4xl md:text-5xl font-semibold tracking-tight'>Africarstruck</div>
         </ProjectLeft>
-          <ProjectRight progress={progress}>
-            <Image src="/assets/projects/ACT.png" layout='responsive' width={717} height={816} alt='ACT'/>
-          </ProjectRight>
+
+        <ProjectRight progress={progress}>
+          <Image src="/assets/projects/ACT.png" layout='responsive' width={717} height={816} alt='ACT'/>
+        </ProjectRight>
       </ProjectContainer>)}></Tile>
         
       <Tile 
         page={1} renderContent={({progress}) => (
           <ProjectContainer progress={1}>
           <ProjectLeft progress={progress}>
-            <div>The Best</div>
+            <div>We Revamped</div>
+            <div className='text-4xl md:text-5xl font-semibold tracking-tight'>Bafsta</div>
           </ProjectLeft>
-            <span className='text-9xl'>How are you
-              {progress}
-            </span>
+
+          <ProjectRight progress={progress}>
+            <Image src="/assets/projects/bafsta.png" layout='responsive' width={717} height={816} alt='BAFSTA'/>
+          </ProjectRight>
         </ProjectContainer>)}></Tile>
 
       <Tile 
         page={2} renderContent={({progress}) => (
           <ProjectContainer progress={2}>
           <ProjectLeft progress={progress}>
-            <div>Blockchain Product</div>
+            <div>We Patnered with</div>
+            <div className='text-4xl md:text-5xl font-semibold tracking-tight'>Wearhighstreet</div>
           </ProjectLeft>
-            <span className='text-9xl'>Hello 
-              {progress}
-            </span>
+
+          <ProjectRight progress={progress}>
+            <Image src="/assets/projects/WHS.png" layout='responsive' width={717} height={816} alt='WEARHIGHSTREET'/>
+          </ProjectRight>
         </ProjectContainer>)}></Tile>
     </TileContent>
   </TileWrapper>
