@@ -41,7 +41,7 @@ const Projects = () => {
           <ProjectContainer progress={2}>
           <ProjectLeft progress={progress}>
             <div>We Patnered with</div>
-            <div className='text-4xl md:text-5xl font-semibold tracking-tight'>Wearhighstreet</div>
+            <div className='text-4xl md:text-5xl font-semibold tracking-tight'>HighStreet</div>
           </ProjectLeft>
 
           <ProjectRight progress={progress}>
