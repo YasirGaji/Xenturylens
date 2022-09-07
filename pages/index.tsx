@@ -5,6 +5,7 @@ import Masthead from '../components/masthead';
 import AboutUs from '../components/aboutus';
 import Skills from '../components/skills';
 import Projects from '../components/projects';
+import TrustedBy from '../components/trustedby';
 
 const Home: NextPage = () => {
   return (
@@ -21,6 +22,7 @@ const Home: NextPage = () => {
       <AboutUs />
       <Skills />
       <Projects />
+      <TrustedBy />
     </div>
   );
 };
