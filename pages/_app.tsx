@@ -1,12 +1,15 @@
 import '../styles/globals.css';
 import type { AppProps } from 'next/app';
 import ScrollObserver from '../utills/scroll-observer';
+import SizeObserver from '../utills/size-observer';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <ScrollObserver>
-      <Component {...pageProps} />
-    </ScrollObserver>
+    <SizeObserver innnerWidth={0}>
+      <ScrollObserver>
+        <Component {...pageProps} />
+      </ScrollObserver>
+    </SizeObserver>
   );
 }
 
