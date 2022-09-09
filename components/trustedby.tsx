@@ -1,4 +1,5 @@
 import React from 'react';
+import Logos from './logos';
 
 const TrustedBy: React.FC = () => {
   return (
@@ -10,7 +11,7 @@ const TrustedBy: React.FC = () => {
           <span className='whitespace-nowrap'>Trusted By</span>{' '}
           <span className='whitespace-nowwrap'> the brands & products you trust</span>
         </h3>
-        <div>logos</div>
+        <Logos/>
       </div>
       <div className='flex flex-col justify-center items-center'>
         <div className='container mx-auto lg:max-w-[70%] lg:px-10'>

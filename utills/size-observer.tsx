@@ -1,12 +1,12 @@
 import React, { ReactNode, useCallback, useEffect, useState } from 'react';
 
 interface ScrollValue {
-  innnerWidth: number;
+  innerWidth: number;
   children?: ReactNode;
 } 
 
 export const SizeContext = React.createContext<ScrollValue>({   
-  innnerWidth: 0 
+  innerWidth: 0 
 });
 
 const SizeObserver: React.FC<ScrollValue> = ({ children }) => {
@@ -24,7 +24,7 @@ const SizeObserver: React.FC<ScrollValue> = ({ children }) => {
   }, [handleResize])
 
   return (
-    <SizeContext.Provider value={{ innnerWidth }}>
+    <SizeContext.Provider value={{ innerWidth }}>
       {children}
     </SizeContext.Provider>
   )

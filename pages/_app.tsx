@@ -5,7 +5,7 @@ import SizeObserver from '../utills/size-observer';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <SizeObserver innnerWidth={0}>
+    <SizeObserver innerWidth={0}>
       <ScrollObserver>
         <Component {...pageProps} />
       </ScrollObserver>
