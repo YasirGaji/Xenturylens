@@ -7,6 +7,40 @@ const Logos: React.FC = () => {
     <>
       <SliderContainer initialOffsetX={0} contentWidth={1290}>
         <Image src="/assets/brands/logo.svg" alt="logo" width={150} height={50} objectFit="contain" />
+
+        <Image src="/assets/brands/logo.svg" alt="logo" width={150} height={50} objectFit="contain" />
+
+        <Image src="/assets/brands/logo.svg" alt="logo" width={150} height={50} objectFit="contain" />
+
+        <Image src="/assets/brands/logo.svg" alt="logo" width={150} height={50} objectFit="contain" />
+
+        <Image src="/assets/brands/logo.svg" alt="logo" width={150} height={50} objectFit="contain" />
+
+        <Image src="/assets/brands/logo.svg" alt="logo" width={150} height={50} objectFit="contain" />
+
+        <Image src="/assets/brands/logo.svg" alt="logo" width={150} height={50} objectFit="contain" />
+
+        <Image src="/assets/brands/logo.svg" alt="logo" width={150} height={50} objectFit="contain" />
+
+        <Image src="/assets/brands/logo.svg" alt="logo" width={150} height={50} objectFit="contain" />
+
+        <Image src="/assets/brands/logo.svg" alt="logo" width={150} height={50} objectFit="contain" />
+
+        <Image src="/assets/brands/logo.svg" alt="logo" width={150} height={50} objectFit="contain" />
+
+        <Image src="/assets/brands/logo.svg" alt="logo" width={150} height={50} objectFit="contain" />
+
+        <Image src="/assets/brands/logo.svg" alt="logo" width={150} height={50} objectFit="contain" />
+
+        <Image src="/assets/brands/logo.svg" alt="logo" width={150} height={50} objectFit="contain" />
+
+        <Image src="/assets/brands/logo.svg" alt="logo" width={150} height={50} objectFit="contain" />
+
+        <Image src="/assets/brands/logo.svg" alt="logo" width={150} height={50} objectFit="contain" />
+
+        <Image src="/assets/brands/logo.svg" alt="logo" width={150} height={50} objectFit="contain" />
+
+        <Image src="/assets/brands/logo.svg" alt="logo" width={150} height={50} objectFit="contain" />
       </SliderContainer>
     </>
   )
