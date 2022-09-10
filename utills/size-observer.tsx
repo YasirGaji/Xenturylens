@@ -10,9 +10,9 @@ export const SizeContext = React.createContext<ScrollValue>({
 });
 
 const SizeObserver: React.FC<ScrollValue> = ({ children }) => {
-  const [innnerWidth, setInnnerWidth] = useState(0);
+  const [innerWidth, setInnerWidth] = useState(0);
   const handleResize = useCallback(() => {
-    setInnnerWidth(window.innerWidth);
+    setInnerWidth(window.innerWidth);
   }, [])
 
   useEffect(() => {
