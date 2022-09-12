@@ -1,0 +1,28 @@
+.viewport:global(.ls-draggable) {
+  cursor: -webkit-grab;
+  cursor: grab;
+  cursor: move;
+}
+
+.viewport:global(.ls-draggable) {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+
+.container {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.slide {
+  flex: 0 0 auto;
+  max-width: min(70%, 620px);
+  opacity: 0.4;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.slide:global(.active) {
+  opacity: 1;
+}

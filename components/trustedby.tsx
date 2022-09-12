@@ -1,5 +1,6 @@
 import React from 'react';
 import Logos from './logos';
+import Testimonials from './testimonials';
 
 const TrustedBy: React.FC = () => {
   return (
@@ -20,7 +21,7 @@ const TrustedBy: React.FC = () => {
       </div>
 
       <div>
-        Testimonials
+        <Testimonials />
       </div>
 
       <div className='flex-1 bg-black'></div>
