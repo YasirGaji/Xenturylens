@@ -1,9 +1,10 @@
-import React, { ReactNode, useCallback, useEffect, useState } from "react";
+import React, { ReactNode, useCallback, useState } from "react";
 import { EmblaCarouselType } from "embla-carousel-react";
 import ClassNames from 'embla-carousel-class-names';
 import Autoplay from 'embla-carousel-autoplay';
 import useEmblaCarousel from 'embla-carousel-react';
 import styles from './carousel.module.css';
+import useAsyncEffect from "use-async-effect";
 
 interface ContextValue {
   children?: ReactNode;
@@ -34,7 +35,7 @@ const Carousel: React.FC<Props> = ({ className, children }) => {
     setSelectedIndex(emblaApi.selectedScrollSnap());
   }, [emblaApi, setSelectedIndex]);
 
-  useEffect(() => {
+  useAsyncEffect( () => {
     if (!emblaApi)
       return;
     onSelect();
