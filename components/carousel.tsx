@@ -3,7 +3,7 @@ import { EmblaCarouselType } from "embla-carousel-react";
 import ClassNames from 'embla-carousel-class-names';
 import Autoplay from 'embla-carousel-autoplay';
 import useEmblaCarousel from 'embla-carousel-react';
-import styles from './carousel.module.css';
+import styles from '../styles/carousel.module.css';
 import useAsyncEffect from "use-async-effect";
 
 interface ContextValue {

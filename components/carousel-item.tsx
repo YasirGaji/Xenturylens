@@ -1,6 +1,6 @@
 import React, { useCallback, useContext, ReactNode } from "react";
 import { CarouselContext } from "./carousel";
-import styles from '../styles/carousel-item.module.css';
+import styles from '../styles/carousel.module.css';
 
 interface Props {
   index: number;
@@ -18,3 +18,5 @@ const CarouselItem: React.FC<Props> = ({ index, children }) => {
     <div className={`${styles.slide} relative ${isActive ? 'active' : ''}`} onClick={handleClick}>{children}</div>
   )
 }
+
+export default CarouselItem;
