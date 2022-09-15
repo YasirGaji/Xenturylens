@@ -66,7 +66,7 @@ const ContactUs: React.FC = () => {
       })
       .catch((error) => {
         handleServerResponse(false, error.response.data.error)
-        console.log(error)
+        console.log(error, 'innit')
       })
   }, [inputs, handleServerResponse])
 
