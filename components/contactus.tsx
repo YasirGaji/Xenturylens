@@ -91,15 +91,15 @@ const ContactUs: React.FC = () => {
             </div>
           ) : ( 
             <>
-              <input id="companyName" name="companyName" type="text" placeholder="Company Name"  required maxLength={128} className="bg-black text-white border-2 border-white rounded-3xl outline-none p-2 mt-10 " />
+              <input id="companyName" name="companyName" type="text" placeholder="Company Name"  required maxLength={128} className="bg-black text-white border-2 border-white rounded-3xl outline-none p-3 mt-10" onChange={handleOnChange} />
 
-              <input id="email" name="email" type="email" placeholder="Email" className="bg-black text-white border-2 border-white rounded-3xl outline-none p-2 mt-10  py-2" />
+              <input id="email" name="email" type="email" placeholder="Email" className="bg-black text-white border-2 border-white rounded-3xl outline-none p-3 mt-10  py-2" onChange={handleOnChange} />
 
-              <textarea id="message" name="message" required maxLength={10485} placeholder="Additional Information" className="bg-black text-white border-2 outline-none border-white rounded-3xl px-8 py-6 mt-10 min-h-[16em]"></textarea>
+              <textarea id="message" name="message" required maxLength={10485} placeholder="Additional Information" className="bg-black text-white border-2 outline-none border-white rounded-3xl px-8 py-6 mt-10 min-h-[16em]" onChange={handleOnChange}></textarea>
 
               <div className="text-center mt-10">
                 <button type="submit" className="bg-white text-black rounded-3xl px-8 py-2 ">
-                  {status.submitting ? !status.submitted ? 'Submit' : 'Submitted' : 'Submitting...'}
+                  {!status.submitting ? !status.submitted ? 'Submit' : 'Submitted' : 'Submitting...'}
                 </button>
               </div>
             </>
