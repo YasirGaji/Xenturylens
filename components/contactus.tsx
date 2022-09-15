@@ -54,6 +54,7 @@ const ContactUs: React.FC = () => {
 
   const handleSubmit =  useCallback((e: { preventDefault: () => void; }) => {
     e.preventDefault()
+    console.log('here', process.env.NEXT_PUBLIC_CONTACT_FORM_ENDPOINT_URL);
     setStatus((prevStatus) => ({ ...prevStatus, submitting: true }))
     axios({
       method: "POST",
