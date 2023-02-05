@@ -1,13 +1,25 @@
-This is a [Xenturylens](https://xenturylens.com/) created with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# XenturyLens
 
-<!-- ## Getting Started
+[Completed]
 
-First, run the development server:
+This is a Product Development As A Service (_PDAAS_) "[XenturyLens](https://xenturylens.com/)" built on [NextJS](https://nextjs.org/), [TailwindCSS](https://tailwindcss.com/)
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## Other tools/technology and libraries used
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result. -->
+ [Form Spree](https://formspree.io/) - For the form integration 
+
+## What I Learned
+  
+  1. How to use NextJS
+  2. How to use TailwindCSS
+  3. How to use Form Spree
+  
+## Errors I Faced
+
+  NONE
+
+## Current Error
+  
+  1. NONE
+
+## [View Project](https://xenturylens.com/)
