@@ -30,13 +30,6 @@ const AboutUs: React.FC = () => {
           />
 
           <Member
-            id="moji"
-            name="NaNa"
-            link="https://www.linkedin.com/in/mojisola-anthony-bb7412247/"
-            socialId="@Esinana_moji"
-          />
-
-          <Member
             id="zaki"
             name="ZaKi"
             link="https://razakdev.netlify.app"
