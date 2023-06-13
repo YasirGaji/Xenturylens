@@ -11,7 +11,7 @@ const Projects = () => {
     </TileBackground>
 
     <TileContent numOfPages={1}>
-      <Tile page={0} renderContent={({progress}) => ( 
+<!--       <Tile page={0} renderContent={({progress}) => ( 
       <ProjectContainer progress={0} href={''}>
         <ProjectLeft progress={progress} href={''}>
           <div>We Built</div>
@@ -25,9 +25,9 @@ const Projects = () => {
         <ProjectRight progress={progress} href={''}>
           <Image src="/assets/projects/ACT.png" layout='responsive' width={717} height={816} alt='ACT'/>
         </ProjectRight>
-      </ProjectContainer>)}></Tile>
+      </ProjectContainer>)}></Tile> -->
         
-      <Tile 
+<!--       <Tile 
         page={1} renderContent={({progress}) => (
           <ProjectContainer progress={1} href={''}>
           <ProjectLeft progress={progress} href={''}>
@@ -42,7 +42,7 @@ const Projects = () => {
           <ProjectRight progress={progress} href={''}>
             <Image src="/assets/projects/bafsta.png" layout='responsive' width={717} height={816} alt='BAFSTA'/>
           </ProjectRight>
-        </ProjectContainer>)}></Tile>
+        </ProjectContainer>)}></Tile> -->
 
       <Tile 
         page={2} renderContent={({progress}) => (
